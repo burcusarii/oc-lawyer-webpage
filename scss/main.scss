@@ -1,3 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+@import "variables";
+@import "utilities";
+@import "base";
+@import "header";
+@import "home";
+@import "contact";
+@import "mobile";
+@import "about";
+@import "footer";

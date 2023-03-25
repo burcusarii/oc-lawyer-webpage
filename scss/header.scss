@@ -1,0 +1,106 @@
+#header {
+  background-image: url("../img/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 86rem;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 86rem;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.8;
+  }
+
+  #top-header {
+    position: absolute;
+    color: #fff;
+    z-index: 5;
+    width: 100%;
+    padding: 2.5rem 0;
+    #top-header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+
+      #top-header-right {
+        .fa-phone {
+          color: $primary-color;
+          font-size: 2.5rem;
+        }
+
+        #phone-number {
+          font-size: 2.5rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  #bottom-header {
+    position: absolute;
+    color: #fff;
+    z-index: 15;
+    width: 100%;
+    padding: 2.5rem 0;
+    top: 10rem;
+
+    #bottom-header-container {
+      width: 80%;
+      margin: 0 auto;
+
+      #navbar {
+        display: flex;
+        background-color: $primary-color;
+        padding: 2rem 0;
+        border-radius: 1rem;
+
+        li {
+          padding-left: 4rem;
+          font-size: 2rem;
+          transition: all 0.5s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  #header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    z-index: 10;
+
+    #header-content-container {
+      width: 80%;
+      margin: 0 auto;
+
+      #contact-button {
+        margin-top: 2rem;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.8rem;
+      }
+
+      #header-content-title {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        margin-top: 10rem;
+      }
+
+      #header-content-text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

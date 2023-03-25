@@ -1,0 +1,70 @@
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  font-size: 1.2rem;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    display: flex;
+    div {
+      margin: 0 1rem;
+      flex: 1;
+      padding: 1rem;
+      p {
+        text-align: justify;
+      }
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .footer-info {
+      margin-left: 0;
+      padding-left: 0;
+      #lawyer-card {
+        margin: 0 0 1rem 0;
+        padding: 0;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      .social-media {
+        margin-left: 0;
+        padding-left: 0;
+        .fa-brands {
+          font-size: 2.5rem;
+          padding: 0.5rem;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .footer-article {
+      ul {
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+#copyright-footer {
+  background-color: #111;
+  color: #fff;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .copyright-footer-container {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+}

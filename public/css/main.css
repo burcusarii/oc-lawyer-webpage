@@ -1,2 +1,298 @@
+@charset "UTF-8";
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px; }
+
+.btn-secondary {
+  background-color: #a77e18;
+  transition: all 0.8s; }
+  .btn-secondary:hover {
+    background-color: #c6961c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.btn-primary {
+  background-color: #3f497f; }
+  .btn-primary:hover {
+    background-color: #4b5797;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+#lawyer-card {
+  display: flex; }
+  #lawyer-card #lawyer-card-text {
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem; }
+    #lawyer-card #lawyer-card-text h3 {
+      font-weight: 800; }
+      #lawyer-card #lawyer-card-text h3#lawyer {
+        color: #a77e18; }
+
+html {
+  font-size: 10px; }
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+ul {
+  list-style: none;
+  font-size: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit; }
+
+#header {
+  background-image: url("../img/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 86rem; }
+  #header::after {
+    content: "";
+    width: 100%;
+    height: 86rem;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.8; }
+  #header #top-header {
+    position: absolute;
+    color: #fff;
+    z-index: 5;
+    width: 100%;
+    padding: 2.5rem 0; }
+    #header #top-header #top-header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto; }
+      #header #top-header #top-header-container #top-header-right .fa-phone {
+        color: #3f497f;
+        font-size: 2.5rem; }
+      #header #top-header #top-header-container #top-header-right #phone-number {
+        font-size: 2.5rem;
+        margin-left: 0.5rem; }
+  #header #bottom-header {
+    position: absolute;
+    color: #fff;
+    z-index: 15;
+    width: 100%;
+    padding: 2.5rem 0;
+    top: 10rem; }
+    #header #bottom-header #bottom-header-container {
+      width: 80%;
+      margin: 0 auto; }
+      #header #bottom-header #bottom-header-container #navbar {
+        display: flex;
+        background-color: #3f497f;
+        padding: 2rem 0;
+        border-radius: 1rem; }
+        #header #bottom-header #bottom-header-container #navbar li {
+          padding-left: 4rem;
+          font-size: 2rem;
+          transition: all 0.5s; }
+          #header #bottom-header #bottom-header-container #navbar li:hover {
+            color: #a77e18; }
+  #header #header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    z-index: 10; }
+    #header #header-content #header-content-container {
+      width: 80%;
+      margin: 0 auto; }
+      #header #header-content #header-content-container #contact-button {
+        margin-top: 2rem;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.8rem; }
+      #header #header-content #header-content-container #header-content-title {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        margin-top: 10rem; }
+      #header #header-content #header-content-container #header-content-text {
+        font-size: 2.5rem; }
+
+#main-content .section {
+  opacity: 0;
+  transition: all 0.8s ease;
+  transform: translateY(70px); }
+  #main-content .section.show {
+    opacity: 1;
+    transform: translateY(0px); }
+
+/*SECTİON 2*/
+#section-1 {
+  width: 100%;
+  height: 100%; }
+  #section-1 #section-1-container {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    margin-top: -7rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    #section-1 #section-1-container .left-side {
+      background-color: #1d223b;
+      padding: 2rem;
+      color: #fff;
+      flex: 1; }
+      #section-1 #section-1-container .left-side h4 {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem; }
+      #section-1 #section-1-container .left-side p {
+        text-align: justify;
+        padding-bottom: 1.5rem;
+        font-size: 1.6rem; }
+    #section-1 #section-1-container .right-side {
+      flex: 1; }
+      #section-1 #section-1-container .right-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; }
+
+/*SECTİON 2*/
+#section-2 .section-title {
+  text-align: center;
+  padding: 10rem 0; }
+  #section-2 .section-title .section-title-top {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #bbbbbb;
+    letter-spacing: 0.2rem; }
+  #section-2 .section-title .section-title-main {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0;
+    border-bottom: #a77e18 solid 3px;
+    display: inline-block; }
+
+#section-2 .section-container {
+  width: 80%;
+  margin: 0 auto; }
+
+#section-2 .section-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  gap: 5rem; }
+  #section-2 .section-content .card {
+    padding: 5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    transition: all 0.5s; }
+    #section-2 .section-content .card:hover {
+      transform: translateY(-20px); }
+
+#section-3 .section-container {
+  width: 80%;
+  margin: 0 auto; }
+  #section-3 .section-container .section-3_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
+    margin: 20rem 0; }
+    #section-3 .section-container .section-3_container .section-3_img {
+      flex: 1; }
+      #section-3 .section-container .section-3_container .section-3_img img {
+        width: 90%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 2rem; }
+    #section-3 .section-container .section-3_container .section-3_text {
+      flex: 1;
+      text-align: justify;
+      align-self: center; }
+      #section-3 .section-container .section-3_container .section-3_text .section-3_text_title {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        color: #888;
+        margin-bottom: 1rem; }
+      #section-3 .section-container .section-3_container .section-3_text .section-3_text_p1 {
+        font-size: 3rem;
+        letter-spacing: 1px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 2rem; }
+      #section-3 .section-container .section-3_container .section-3_text .border-bottom {
+        width: 5rem;
+        border-color: #d2d2d2;
+        border-width: 3px;
+        border-bottom-style: solid;
+        margin-bottom: 2rem; }
+      #section-3 .section-container .section-3_container .section-3_text .section-3_text_p2 {
+        font-size: 2.7rem;
+        letter-spacing: 1px;
+        color: #a77e18;
+        font-weight: 600;
+        margin-bottom: 2rem; }
+      #section-3 .section-container .section-3_container .section-3_text .section-3_text_p3 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 2rem; }
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  font-size: 1.2rem; }
+  #main-footer .container {
+    width: 80%;
+    margin: 0 auto; }
+  #main-footer .footer-container {
+    display: flex; }
+    #main-footer .footer-container div {
+      margin: 0 1rem;
+      flex: 1;
+      padding: 1rem; }
+      #main-footer .footer-container div p {
+        text-align: justify; }
+      #main-footer .footer-container div h4 {
+        margin-bottom: 1rem; }
+    #main-footer .footer-container .footer-info {
+      margin-left: 0;
+      padding-left: 0; }
+      #main-footer .footer-container .footer-info #lawyer-card {
+        margin: 0 0 1rem 0;
+        padding: 0; }
+      #main-footer .footer-container .footer-info h3 {
+        font-size: 1.5rem; }
+      #main-footer .footer-container .footer-info .social-media {
+        margin-left: 0;
+        padding-left: 0; }
+        #main-footer .footer-container .footer-info .social-media .fa-brands {
+          font-size: 2.5rem;
+          padding: 0.5rem;
+          color: #a77e18; }
+    #main-footer .footer-container .footer-article ul li {
+      margin-bottom: 1rem; }
+
+#copyright-footer {
+  background-color: #111;
+  color: #fff; }
+  #copyright-footer .container {
+    width: 80%;
+    margin: 0 auto; }
+  #copyright-footer .copyright-footer-container {
+    font-size: 1.5rem;
+    padding: 2rem 0; }
