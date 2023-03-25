@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .btn-secondary {
@@ -22,6 +22,13 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// LAWYER CARD
 
 #lawyer-card {
   display: flex;

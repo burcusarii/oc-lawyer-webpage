@@ -24,8 +24,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
-      margin: 0 auto;
 
       #top-header-right {
         .fa-phone {
@@ -50,9 +48,6 @@
     top: 10rem;
 
     #bottom-header-container {
-      width: 80%;
-      margin: 0 auto;
-
       #navbar {
         display: flex;
         background-color: $primary-color;
@@ -82,9 +77,6 @@
     z-index: 10;
 
     #header-content-container {
-      width: 80%;
-      margin: 0 auto;
-
       #contact-button {
         margin-top: 2rem;
         display: inline-block;
