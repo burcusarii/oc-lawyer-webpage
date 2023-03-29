@@ -1,0 +1,280 @@
+.header-1 {
+
+  &#home-header {
+    background-image: url("../img/bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 86rem;
+    position: relative;
+    top: 0;
+    transition: all .8s;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 86rem;
+      background-color: #000;
+      position: absolute;
+      opacity: 0.6;
+    }  
+    &.hidden {
+      opacity: 0;
+    } 
+  }
+  &#about-header {
+    background-image: url("../img/bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    top: 0;
+    transition: all .8s;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 50rem;
+      background-color: #000;
+      position: absolute;
+      opacity: 0.8;
+    }
+
+    #header-content {
+      text-align: center;
+
+      h2 {
+        font-size: 8rem;
+        padding-top: 8rem;
+      }
+    }
+   
+  }
+
+  .fa-chevron-right, .fa-chevron-left {
+    font-size: 5rem;
+    position: absolute;
+    padding: 2rem;
+    color: $medium-color;
+    opacity: .7;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      opacity: .4;
+    }
+  }
+
+  .fa-chevron-right {
+    right: 0;
+  }
+
+  #top-header {
+    position: absolute;
+    color: #fff;
+    z-index: 5;
+    width: 100%;
+    padding: 2.5rem 0;
+    #top-header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #top-header-right {
+        .fa-phone {
+          color: $primary-color;
+          font-size: 2.5rem;
+        }
+
+        #phone-number {
+          font-size: 2.5rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  #bottom-header {
+    position: absolute;
+    color: #fff;
+    z-index: 15;
+    width: 100%;
+    padding: 2.5rem 0;
+    top: 10rem;
+
+    #bottom-header-container {
+      #navbar {
+        display: flex;
+        background-color: $primary-color;
+        padding: 2rem 0;
+        border-radius: 1rem;
+
+        li {
+          padding-left: 4rem;
+          font-size: 2rem;
+          transition: all 0.5s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  #header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    z-index: 10;
+
+    #header-content-container {
+      #contact-button {
+        margin-top: 2rem;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.8rem;
+      }
+
+      #header-content-title {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        margin-top: 10rem;
+      }
+
+      #header-content-text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+.header-2 {
+  background-image: url("../img/bg-2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 86rem;
+  position: absolute;
+  top: 0;
+  transition: all .8s;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 86rem;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.8;
+  }
+
+  &.hidden {
+    opacity: 0;
+  }
+  .fa-chevron-right, .fa-chevron-left {
+    font-size: 5rem;
+    position: absolute;
+    padding: 2rem;
+    color: $medium-color;
+    opacity: .7;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      opacity: .4;
+    }
+  }
+
+  .fa-chevron-right {
+    right: 0;
+  }
+
+  #top-header {
+    position: absolute;
+    color: #fff;
+    z-index: 5;
+    width: 100%;
+    padding: 2.5rem 0;
+    #top-header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #top-header-right {
+        .fa-phone {
+          color: $primary-color;
+          font-size: 2.5rem;
+        }
+
+        #phone-number {
+          font-size: 2.5rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  #bottom-header {
+    position: absolute;
+    color: #fff;
+    z-index: 15;
+    width: 100%;
+    padding: 2.5rem 0;
+    top: 10rem;
+
+    #bottom-header-container {
+      #navbar {
+        display: flex;
+        background-color: $primary-color;
+        padding: 2rem 0;
+        border-radius: 1rem;
+
+        li {
+          padding-left: 4rem;
+          font-size: 2rem;
+          transition: all 0.5s;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  #header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    z-index: 10;
+
+    #header-content-container {
+      #contact-button {
+        margin-top: 2rem;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.8rem;
+      }
+
+      #header-content-title {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        margin-top: 10rem;
+      }
+
+      #header-content-text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+
+
