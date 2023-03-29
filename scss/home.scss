@@ -22,13 +22,17 @@
     position: relative;
     grid-template-columns: 50% 50%;
     margin-top: -7rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 
     .left-side {
-      background-color: darken($primary-color, 20);
+      background-color: $dark-color;
       padding: 2rem;
       color: #fff;
       flex: 1;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      
+
 
       h4 {
         font-size: 2.5rem;
@@ -50,6 +54,8 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
       }
     }
   }

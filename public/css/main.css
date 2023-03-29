@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 .btn {
   display: inline-block;
   padding: 1.5rem 2.5rem;
@@ -6,16 +7,16 @@
   border-radius: 1rem; }
 
 .btn-secondary {
-  background-color: #a77e18;
+  background-color: #1F8A70;
   transition: all 0.8s; }
   .btn-secondary:hover {
-    background-color: #c6961c;
+    background-color: #26a788;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .btn-primary {
-  background-color: #3f497f; }
+  background-color: #2E4F4F; }
   .btn-primary:hover {
-    background-color: #4b5797;
+    background-color: #3b6666;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .container {
@@ -31,7 +32,7 @@
     #lawyer-card #lawyer-card-text h3 {
       font-weight: 800; }
       #lawyer-card #lawyer-card-text h3#lawyer {
-        color: #a77e18; }
+        color: #1F8A70; }
 
 html {
   font-size: 10px; }
@@ -53,55 +54,186 @@ a {
   color: inherit;
   font-size: inherit; }
 
-#header {
+.header-1#home-header {
   background-image: url("../img/bg.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 86rem; }
-  #header::after {
+  height: 86rem;
+  position: relative;
+  top: 0;
+  transition: all .8s; }
+  .header-1#home-header::after {
+    content: "";
+    width: 100%;
+    height: 86rem;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.6; }
+  .header-1#home-header.hidden {
+    opacity: 0; }
+
+.header-1#about-header {
+  background-image: url("../img/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  top: 0;
+  transition: all .8s; }
+  .header-1#about-header::after {
+    content: "";
+    width: 100%;
+    height: 50rem;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.8; }
+  .header-1#about-header #header-content {
+    text-align: center; }
+    .header-1#about-header #header-content h2 {
+      font-size: 8rem;
+      padding-top: 8rem; }
+
+.header-1 .fa-chevron-right, .header-1 .fa-chevron-left {
+  font-size: 5rem;
+  position: absolute;
+  padding: 2rem;
+  color: #ccc;
+  opacity: .7;
+  cursor: pointer;
+  transition: all .5s; }
+  .header-1 .fa-chevron-right:hover, .header-1 .fa-chevron-left:hover {
+    opacity: .4; }
+
+.header-1 .fa-chevron-right {
+  right: 0; }
+
+.header-1 #top-header {
+  position: absolute;
+  color: #fff;
+  z-index: 5;
+  width: 100%;
+  padding: 2.5rem 0; }
+  .header-1 #top-header #top-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-1 #top-header #top-header-container #top-header-right .fa-phone {
+      color: #2E4F4F;
+      font-size: 2.5rem; }
+    .header-1 #top-header #top-header-container #top-header-right #phone-number {
+      font-size: 2.5rem;
+      margin-left: 0.5rem; }
+
+.header-1 #bottom-header {
+  position: absolute;
+  color: #fff;
+  z-index: 15;
+  width: 100%;
+  padding: 2.5rem 0;
+  top: 10rem; }
+  .header-1 #bottom-header #bottom-header-container #navbar {
+    display: flex;
+    background-color: #2E4F4F;
+    padding: 2rem 0;
+    border-radius: 1rem; }
+    .header-1 #bottom-header #bottom-header-container #navbar li {
+      padding-left: 4rem;
+      font-size: 2rem;
+      transition: all 0.5s; }
+      .header-1 #bottom-header #bottom-header-container #navbar li:hover {
+        color: #1F8A70; }
+
+.header-1 #header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  color: #fff;
+  z-index: 10; }
+  .header-1 #header-content #header-content-container #contact-button {
+    margin-top: 2rem;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.8rem; }
+  .header-1 #header-content #header-content-container #header-content-title {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    margin-top: 10rem; }
+  .header-1 #header-content #header-content-container #header-content-text {
+    font-size: 2.5rem; }
+
+.header-2 {
+  background-image: url("../img/bg-2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 86rem;
+  position: absolute;
+  top: 0;
+  transition: all .8s; }
+  .header-2::after {
     content: "";
     width: 100%;
     height: 86rem;
     background-color: #000;
     position: absolute;
     opacity: 0.8; }
-  #header #top-header {
+  .header-2.hidden {
+    opacity: 0; }
+  .header-2 .fa-chevron-right, .header-2 .fa-chevron-left {
+    font-size: 5rem;
+    position: absolute;
+    padding: 2rem;
+    color: #ccc;
+    opacity: .7;
+    cursor: pointer;
+    transition: all .5s; }
+    .header-2 .fa-chevron-right:hover, .header-2 .fa-chevron-left:hover {
+      opacity: .4; }
+  .header-2 .fa-chevron-right {
+    right: 0; }
+  .header-2 #top-header {
     position: absolute;
     color: #fff;
     z-index: 5;
     width: 100%;
     padding: 2.5rem 0; }
-    #header #top-header #top-header-container {
+    .header-2 #top-header #top-header-container {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      #header #top-header #top-header-container #top-header-right .fa-phone {
-        color: #3f497f;
+      .header-2 #top-header #top-header-container #top-header-right .fa-phone {
+        color: #2E4F4F;
         font-size: 2.5rem; }
-      #header #top-header #top-header-container #top-header-right #phone-number {
+      .header-2 #top-header #top-header-container #top-header-right #phone-number {
         font-size: 2.5rem;
         margin-left: 0.5rem; }
-  #header #bottom-header {
+  .header-2 #bottom-header {
     position: absolute;
     color: #fff;
     z-index: 15;
     width: 100%;
     padding: 2.5rem 0;
     top: 10rem; }
-    #header #bottom-header #bottom-header-container #navbar {
+    .header-2 #bottom-header #bottom-header-container #navbar {
       display: flex;
-      background-color: #3f497f;
+      background-color: #2E4F4F;
       padding: 2rem 0;
       border-radius: 1rem; }
-      #header #bottom-header #bottom-header-container #navbar li {
+      .header-2 #bottom-header #bottom-header-container #navbar li {
         padding-left: 4rem;
         font-size: 2rem;
         transition: all 0.5s; }
-        #header #bottom-header #bottom-header-container #navbar li:hover {
-          color: #a77e18; }
-  #header #header-content {
+        .header-2 #bottom-header #bottom-header-container #navbar li:hover {
+          color: #1F8A70; }
+  .header-2 #header-content {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -110,16 +242,16 @@ a {
     justify-content: center;
     color: #fff;
     z-index: 10; }
-    #header #header-content #header-content-container #contact-button {
+    .header-2 #header-content #header-content-container #contact-button {
       margin-top: 2rem;
       display: inline-block;
       font-weight: 600;
       font-size: 1.8rem; }
-    #header #header-content #header-content-container #header-content-title {
+    .header-2 #header-content #header-content-container #header-content-title {
       margin-bottom: 2rem;
       font-size: 3.5rem;
       margin-top: 10rem; }
-    #header #header-content #header-content-container #header-content-text {
+    .header-2 #header-content #header-content-container #header-content-text {
       font-size: 2.5rem; }
 
 #main-content .section {
@@ -138,13 +270,14 @@ a {
     display: grid;
     position: relative;
     grid-template-columns: 50% 50%;
-    margin-top: -7rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    margin-top: -7rem; }
     #section-1 #section-1-container .left-side {
-      background-color: #1d223b;
+      background-color: #333;
       padding: 2rem;
       color: #fff;
-      flex: 1; }
+      flex: 1;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem; }
       #section-1 #section-1-container .left-side h4 {
         font-size: 2.5rem;
         padding-bottom: 1.5rem; }
@@ -158,7 +291,9 @@ a {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center; }
+        object-position: center;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem; }
 
 /*SECTİON 2*/
 #section-2 .section-title {
@@ -175,7 +310,7 @@ a {
     color: #000;
     letter-spacing: 0.2rem;
     padding: 1rem 0;
-    border-bottom: #a77e18 solid 3px;
+    border-bottom: #1F8A70 solid 3px;
     display: inline-block; }
 
 #section-2 .section-content {
@@ -228,7 +363,7 @@ a {
     #section-3 .section-container .section-3_container .section-3_text .section-3_text_p2 {
       font-size: 2.7rem;
       letter-spacing: 1px;
-      color: #a77e18;
+      color: #1F8A70;
       font-weight: 600;
       margin-bottom: 2rem; }
     #section-3 .section-container .section-3_container .section-3_text .section-3_text_p3 {
@@ -236,6 +371,25 @@ a {
       letter-spacing: 1px;
       color: #333;
       margin-bottom: 2rem; }
+
+.about-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 10rem;
+  margin-bottom: 20rem; }
+  .about-container img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 2rem; }
+  .about-container .about-text {
+    padding: 0 1rem; }
+    .about-container .about-text h4 {
+      font-size: 2.5rem;
+      padding-bottom: 1rem; }
+    .about-container .about-text p {
+      font-size: 1.5rem;
+      text-align: justify; }
 
 #main-footer {
   background-color: #333;
@@ -267,7 +421,7 @@ a {
         #main-footer .footer-container .footer-info .social-media .fa-brands {
           font-size: 2.5rem;
           padding: 0.5rem;
-          color: #a77e18; }
+          color: #1F8A70; }
     #main-footer .footer-container .footer-article ul li {
       margin-bottom: 1rem; }
 

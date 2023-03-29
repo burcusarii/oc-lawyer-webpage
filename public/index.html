@@ -14,7 +14,69 @@
   <body>
     <!--************************** HEADER START **************************-->
 
-    <header id="header">
+    <header  class="header header-1" id="home-header">
+      <!-- TOP HEADER -->
+
+      <div id="top-header">
+        <div id="top-header-container" class="container">
+          <div id="top-header-left">
+            <div id="lawyer-card">
+              <img src="img/icon.svg" alt="lawyer-icon" />
+              <div id="lawyer-card-text">
+                <h3 id="lawyer">Avukat</h3>
+                <h3>Oğuzhan Cıvır</h3>
+              </div>
+            </div>
+          </div>
+          <div id="top-header-right">
+            <a href="tel:+905432452986"
+              ><i class="fa-solid fa-phone"></i>
+              <span id="phone-number">0543 245 29 86</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM HEADER -->
+
+      <div id="bottom-header">
+        <div id="bottom-header-container" class="container">
+          <ul id="navbar">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="">Makaleler</a></li>
+            <li><a href="">İletişim</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HEADER CONTENT -->
+
+      <div id="header-content">
+        <i class="fa-solid fa-chevron-right btn-right"></i>
+        <i class="fa-solid fa-chevron-left"></i>
+        <div id="header-content-container" class="container">
+          <div id="header-content-title">
+            <h2>Avukatlık Hizmetleri</h2>
+          </div>
+          <div id="header-content-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              consequuntur!
+            </p>
+          </div>
+          <div>
+            <a
+              href="iletisim.html"
+              id="contact-button"
+              class="btn btn-secondary"
+              >Bize Ulaşın <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header  class="header header-2 hidden">
       <!-- TOP HEADER -->
 
       <div id="top-header">
@@ -53,9 +115,11 @@
       <!-- HEADER CONTENT -->
 
       <div id="header-content">
+        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fa-solid fa-chevron-left btn-left"></i>
         <div id="header-content-container" class="container">
           <div id="header-content-title">
-            <h2>Avukatlık Hizmetleri</h2>
+            <h2>Arabulucuk Hizmetleri</h2>
           </div>
           <div id="header-content-text">
             <p>
@@ -74,7 +138,6 @@
         </div>
       </div>
     </header>
-
     <!--************************** HEADER END **************************-->
 
     <!--************************** ANASAYFA CONTENT START **************************-->
@@ -283,5 +346,6 @@
     <!--************************** FOOTER END **************************-->
 
     <script src="js/app.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
