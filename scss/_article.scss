@@ -1,16 +1,22 @@
+
+
 .article-container {
-    margin-top: 3rem;
+    margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15rem;
+    gap: 10rem;
 
     .card {
         justify-self: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 1rem;
-        height: 30rem;
-        img { 
+        height: 40rem; 
+        transition: all .4s;
 
+        &:hover {
+            transform: translateY(-2rem);
+        }
+        img { 
             width: 100%;
             height: 50%;
             object-fit: cover;
@@ -20,9 +26,8 @@
         } 
  
         .card-body { 
-            padding-top: 1rem;
-            padding: 0 2rem;
-            text-align: center;
+            padding: 1rem 2rem;
+            text-align: justify;
 
             h5 {
                 font-size: 2.5rem;
@@ -31,6 +36,11 @@
             .card-text {
                 font-size: 1.6rem;
                 text-align: justify;
+            }
+
+            .card-btn {
+                margin: 1rem 0;
+                color: #fff;
             }
         }
     } 
