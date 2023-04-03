@@ -392,6 +392,22 @@ a {
       font-size: 1.5rem;
       text-align: justify; }
 
+.contact-container {
+  background-color: #333;
+  padding: 5rem 0; }
+
+.contact {
+  display: flex;
+  color: #fff; }
+  .contact div {
+    flex: 1;
+    text-align: justify; }
+  .contact h4 {
+    font-size: 3rem;
+    padding: 2rem 0; }
+  .contact a, .contact address {
+    font-size: 2rem; }
+
 .article-container {
   margin-top: 8rem;
   display: grid;
