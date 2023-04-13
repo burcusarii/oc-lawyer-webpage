@@ -55,8 +55,8 @@ a {
   color: inherit;
   font-size: inherit; }
 
-.header-1#home-header {
-  background-image: url("../img/bg.jpeg");
+.header#home-header {
+  background-image: url("../img/bg-2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -65,17 +65,15 @@ a {
   position: relative;
   top: 0;
   transition: all .8s; }
-  .header-1#home-header::after {
+  .header#home-header::after {
     content: "";
     width: 100%;
     height: 86rem;
     background-color: #000;
     position: absolute;
     opacity: 0.6; }
-  .header-1#home-header.hidden {
-    opacity: 0; }
 
-.header-1#about-header {
+.header#about-header {
   background-image: url("../img/bg.jpeg");
   background-position: center;
   background-size: cover;
@@ -85,20 +83,20 @@ a {
   position: relative;
   top: 0;
   transition: all .8s; }
-  .header-1#about-header::after {
+  .header#about-header::after {
     content: "";
     width: 100%;
     height: 50rem;
     background-color: #000;
     position: absolute;
     opacity: 0.8; }
-  .header-1#about-header #header-content {
+  .header#about-header #header-content {
     text-align: center; }
-    .header-1#about-header #header-content h2 {
+    .header#about-header #header-content h2 {
       font-size: 8rem;
       padding-top: 8rem; }
 
-.header-1 .fa-chevron-right, .header-1 .fa-chevron-left {
+.header .fa-chevron-right, .header .fa-chevron-left {
   font-size: 5rem;
   position: absolute;
   padding: 2rem;
@@ -106,49 +104,49 @@ a {
   opacity: .7;
   cursor: pointer;
   transition: all .5s; }
-  .header-1 .fa-chevron-right:hover, .header-1 .fa-chevron-left:hover {
+  .header .fa-chevron-right:hover, .header .fa-chevron-left:hover {
     opacity: .4; }
 
-.header-1 .fa-chevron-right {
+.header .fa-chevron-right {
   right: 0; }
 
-.header-1 #top-header {
+.header #top-header {
   position: absolute;
   color: #fff;
   z-index: 5;
   width: 100%;
   padding: 2.5rem 0; }
-  .header-1 #top-header #top-header-container {
+  .header #top-header #top-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .header-1 #top-header #top-header-container #top-header-right .fa-phone {
+    .header #top-header #top-header-container #top-header-right .fa-phone {
       color: #2E4F4F;
       font-size: 2.5rem; }
-    .header-1 #top-header #top-header-container #top-header-right #phone-number {
+    .header #top-header #top-header-container #top-header-right #phone-number {
       font-size: 2.5rem;
       margin-left: 0.5rem; }
 
-.header-1 #bottom-header {
+.header #bottom-header {
   position: absolute;
   color: #fff;
   z-index: 15;
   width: 100%;
   padding: 2.5rem 0;
   top: 10rem; }
-  .header-1 #bottom-header #bottom-header-container #navbar {
+  .header #bottom-header #bottom-header-container #navbar {
     display: flex;
     background-color: #2E4F4F;
     padding: 2rem 0;
     border-radius: 1rem; }
-    .header-1 #bottom-header #bottom-header-container #navbar li {
+    .header #bottom-header #bottom-header-container #navbar li {
       padding-left: 4rem;
       font-size: 2rem;
       transition: all 0.5s; }
-      .header-1 #bottom-header #bottom-header-container #navbar li:hover {
+      .header #bottom-header #bottom-header-container #navbar li:hover {
         color: #1F8A70; }
 
-.header-1 #header-content {
+.header #header-content {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -157,103 +155,17 @@ a {
   justify-content: center;
   color: #fff;
   z-index: 10; }
-  .header-1 #header-content #header-content-container #contact-button {
+  .header #header-content #header-content-container #contact-button {
     margin-top: 2rem;
     display: inline-block;
     font-weight: 600;
     font-size: 1.8rem; }
-  .header-1 #header-content #header-content-container #header-content-title {
+  .header #header-content #header-content-container #header-content-title {
     margin-bottom: 2rem;
     font-size: 3.5rem;
     margin-top: 10rem; }
-  .header-1 #header-content #header-content-container #header-content-text {
+  .header #header-content #header-content-container #header-content-text {
     font-size: 2.5rem; }
-
-.header-2 {
-  background-image: url("../img/bg-2.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 86rem;
-  position: absolute;
-  top: 0;
-  transition: all .8s; }
-  .header-2::after {
-    content: "";
-    width: 100%;
-    height: 86rem;
-    background-color: #000;
-    position: absolute;
-    opacity: 0.8; }
-  .header-2.hidden {
-    opacity: 0; }
-  .header-2 .fa-chevron-right, .header-2 .fa-chevron-left {
-    font-size: 5rem;
-    position: absolute;
-    padding: 2rem;
-    color: #ccc;
-    opacity: .7;
-    cursor: pointer;
-    transition: all .5s; }
-    .header-2 .fa-chevron-right:hover, .header-2 .fa-chevron-left:hover {
-      opacity: .4; }
-  .header-2 .fa-chevron-right {
-    right: 0; }
-  .header-2 #top-header {
-    position: absolute;
-    color: #fff;
-    z-index: 5;
-    width: 100%;
-    padding: 2.5rem 0; }
-    .header-2 #top-header #top-header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .header-2 #top-header #top-header-container #top-header-right .fa-phone {
-        color: #2E4F4F;
-        font-size: 2.5rem; }
-      .header-2 #top-header #top-header-container #top-header-right #phone-number {
-        font-size: 2.5rem;
-        margin-left: 0.5rem; }
-  .header-2 #bottom-header {
-    position: absolute;
-    color: #fff;
-    z-index: 15;
-    width: 100%;
-    padding: 2.5rem 0;
-    top: 10rem; }
-    .header-2 #bottom-header #bottom-header-container #navbar {
-      display: flex;
-      background-color: #2E4F4F;
-      padding: 2rem 0;
-      border-radius: 1rem; }
-      .header-2 #bottom-header #bottom-header-container #navbar li {
-        padding-left: 4rem;
-        font-size: 2rem;
-        transition: all 0.5s; }
-        .header-2 #bottom-header #bottom-header-container #navbar li:hover {
-          color: #1F8A70; }
-  .header-2 #header-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    color: #fff;
-    z-index: 10; }
-    .header-2 #header-content #header-content-container #contact-button {
-      margin-top: 2rem;
-      display: inline-block;
-      font-weight: 600;
-      font-size: 1.8rem; }
-    .header-2 #header-content #header-content-container #header-content-title {
-      margin-bottom: 2rem;
-      font-size: 3.5rem;
-      margin-top: 10rem; }
-    .header-2 #header-content #header-content-container #header-content-text {
-      font-size: 2.5rem; }
 
 #main-content .section {
   opacity: 0;
@@ -479,7 +391,7 @@ a {
   color: #fff;
   margin-top: 3rem;
   padding: 3rem 0;
-  font-size: 1.2rem; }
+  font-size: 1.6rem; }
   #main-footer .footer-container {
     display: flex; }
     #main-footer .footer-container div {
