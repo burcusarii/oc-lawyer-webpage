@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&display=swap");
 .btn {
   display: inline-block;
   padding: 1.5rem 2.5rem;
@@ -44,7 +45,8 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; }
 
 ul {
   list-style: none;
@@ -90,11 +92,13 @@ a {
     background-color: #000;
     position: absolute;
     opacity: 0.8; }
-  .header#about-header #header-content {
-    text-align: center; }
-    .header#about-header #header-content h2 {
-      font-size: 8rem;
-      padding-top: 8rem; }
+
+.header #header-content {
+  text-align: center; }
+  .header #header-content h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    padding-top: 8rem; }
 
 .header .fa-chevron-right, .header .fa-chevron-left {
   font-size: 5rem;
@@ -124,8 +128,9 @@ a {
       color: #2E4F4F;
       font-size: 2.5rem; }
     .header #top-header #top-header-container #top-header-right #phone-number {
-      font-size: 2.5rem;
-      margin-left: 0.5rem; }
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      font-weight: 500; }
 
 .header #bottom-header {
   position: absolute;
@@ -138,7 +143,8 @@ a {
     display: flex;
     background-color: #2E4F4F;
     padding: 2rem 0;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    font-weight: 400; }
     .header #bottom-header #bottom-header-container #navbar li {
       padding-left: 4rem;
       font-size: 2rem;
@@ -155,6 +161,8 @@ a {
   justify-content: center;
   color: #fff;
   z-index: 10; }
+  .header #header-content #header-content-container.home-header-content {
+    text-align: left; }
   .header #header-content #header-content-container #contact-button {
     margin-top: 2rem;
     display: inline-block;
@@ -165,7 +173,24 @@ a {
     font-size: 3.5rem;
     margin-top: 10rem; }
   .header #header-content #header-content-container #header-content-text {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
+
+.section-title {
+  text-align: center;
+  padding: 10rem 0; }
+  .section-title .section-title-top {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #bbbbbb;
+    letter-spacing: 0.2rem; }
+  .section-title .section-title-main {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0;
+    border-bottom: #1F8A70 solid 3px;
+    display: inline-block; }
 
 #main-content .section {
   opacity: 0;
@@ -192,7 +217,7 @@ a {
       border-top-left-radius: 2rem;
       border-bottom-left-radius: 2rem; }
       #section-1 #section-1-container .left-side h4 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         padding-bottom: 1.5rem; }
       #section-1 #section-1-container .left-side p {
         text-align: justify;
@@ -209,23 +234,6 @@ a {
         border-bottom-right-radius: 2rem; }
 
 /*SECTİON 2*/
-#section-2 .section-title {
-  text-align: center;
-  padding: 10rem 0; }
-  #section-2 .section-title .section-title-top {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #bbbbbb;
-    letter-spacing: 0.2rem; }
-  #section-2 .section-title .section-title-main {
-    font-size: 4rem;
-    font-weight: 600;
-    color: #000;
-    letter-spacing: 0.2rem;
-    padding: 1rem 0;
-    border-bottom: #1F8A70 solid 3px;
-    display: inline-block; }
-
 #section-2 .section-content {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -234,56 +242,27 @@ a {
   #section-2 .section-content .card {
     padding: 5rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
+    border-radius: 1rem;
     font-size: 1.6rem;
     transition: all 0.5s; }
+    #section-2 .section-content .card:nth-child(even) {
+      background-color: #2E4F4F;
+      color: #fff; }
+    #section-2 .section-content .card .card-title {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    #section-2 .section-content .card .card-content {
+      font-weight: 400; }
     #section-2 .section-content .card:hover {
       transform: translateY(-20px); }
 
-#section-3 .section-container .section-3_container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 3rem;
-  margin: 20rem 0; }
-  #section-3 .section-container .section-3_container .section-3_img {
-    flex: 1; }
-    #section-3 .section-container .section-3_container .section-3_img img {
-      width: 90%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 2rem; }
-  #section-3 .section-container .section-3_container .section-3_text {
-    flex: 1;
-    text-align: justify;
-    align-self: center; }
-    #section-3 .section-container .section-3_container .section-3_text .section-3_text_title {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      color: #888;
-      margin-bottom: 1rem; }
-    #section-3 .section-container .section-3_container .section-3_text .section-3_text_p1 {
-      font-size: 3rem;
-      letter-spacing: 1px;
-      color: #333;
-      font-weight: 600;
-      margin-bottom: 2rem; }
-    #section-3 .section-container .section-3_container .section-3_text .border-bottom {
-      width: 5rem;
-      border-color: #d2d2d2;
-      border-width: 3px;
-      border-bottom-style: solid;
-      margin-bottom: 2rem; }
-    #section-3 .section-container .section-3_container .section-3_text .section-3_text_p2 {
-      font-size: 2.7rem;
-      letter-spacing: 1px;
-      color: #1F8A70;
-      font-weight: 600;
-      margin-bottom: 2rem; }
-    #section-3 .section-container .section-3_container .section-3_text .section-3_text_p3 {
-      font-size: 2rem;
-      letter-spacing: 1px;
-      color: #333;
-      margin-bottom: 2rem; }
+#section-3 .container .section-3_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15rem; }
 
 .about-container {
   display: grid;
@@ -315,10 +294,12 @@ a {
     flex: 1;
     text-align: justify; }
   .contact h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
     padding: 2rem 0; }
   .contact a, .contact address {
-    font-size: 2rem; }
+    font-size: 1.6rem;
+    font-weight: 400; }
 
 .article-container {
   margin-top: 8rem;
